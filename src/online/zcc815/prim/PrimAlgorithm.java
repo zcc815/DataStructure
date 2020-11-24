@@ -30,8 +30,7 @@ public class PrimAlgorithm {
         MinTree minTree = new MinTree();
         minTree.createGraph(graph, verxs, data, weight);
         minTree.showGraph(graph);
-        minTree.prim(graph,1);
-
+        minTree.prim(graph, 0);
     }
 }
 
@@ -73,9 +72,9 @@ class MinTree {
                     }
                 }
             }
-            System.out.println("边<" + graph.data[h1]+","+graph.data[h2]+">权值"+minWeight);
+            System.out.println("边<" + graph.data[h1] + "," + graph.data[h2] + ">权值" + minWeight);
             //将当前节点标记为已经访问过
-            visited[h2] =1;
+            visited[h2] = 1;
             minWeight = 10000;
         }
 
