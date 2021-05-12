@@ -33,7 +33,7 @@ public class BubbleSort {
                 break;
             }
         }
-        //打印冒泡排序后的结果
+        //打印冒泡排序后的结果1
         System.out.println("排序后的结果为:");
         for (int i : arr) {
             System.out.print(i + "\n");
