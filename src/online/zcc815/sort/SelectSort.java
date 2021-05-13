@@ -17,7 +17,7 @@ public class SelectSort {
         int[] arr = new int[]{8, 9, 1, 6, 5, 3, 2, 7};
         //定义中间变量
         int tmp = 0;
-        //冒泡排序
+        //插入排序
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = i+1; j < arr.length; j++) {
                 if (arr[i]>arr[j]){
